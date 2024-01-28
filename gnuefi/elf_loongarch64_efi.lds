@@ -7,6 +7,8 @@ SECTIONS
     _text = .;
     *(.text.head)
     *(.text)
+    . = ALIGN(4K);
+    *(.text.eentry)
     *(.text.*)
     *(.gnu.linkonce.t.*)
     *(.srodata)
